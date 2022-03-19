@@ -1,6 +1,6 @@
 ### "DARKER HORIZON JUPYTER" 
 
-Firefox AddOn for Jupyter Notebook, but with the Horizon colorscheme.
+Firefox AddOn "Darker Jupyter" for Jupyter Notebook, but with the Horizon colorscheme.
 
 Installation:
 - run "web-ext build"
