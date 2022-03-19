@@ -2,6 +2,7 @@
 
 Firefox AddOn "Darker Jupyter" for Jupyter Notebook, but with the Horizon colorscheme.
 
+<img src="https://i.imgur.com/YShdxAY.png" width="500">
 Installation:
 - run "web-ext build"
 - rename ".zip" to ".xpi"
