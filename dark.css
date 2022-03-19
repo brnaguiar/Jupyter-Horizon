@@ -1,0 +1,283 @@
+:root{
+    --primary-bg: #282c34;
+    --secondary-bg: #383e4a;
+    --secondary-bg-2: #21252b;
+    --primary-color: #abb2bf;
+    --secondary-color: #f8fafd;
+    --codeblock-md: #5c6370;
+    --selection: #d2e0ff2f;
+    --border: 1px solid #21252b;
+    --box-shadow: 0px 0px 12px 1px rgba(33, 37, 43, 0.2);
+    --selected-cell: #42a5f5;
+}
+
+/* selection */
+::selection, .CodeMirror-selected{
+    background: var(--selection) !important;
+}
+*{
+    scrollbar-color: var(--secondary-bg) var(--primary-bg);
+}
+
+/* cursor */
+.CodeMirror-cursor {
+	border-left: 2px solid white;
+}
+ 
+/* navigation bar */
+#header{
+    background-color: var(--secondary-bg-2) !important;
+    box-shadow: var(--box-shadow);
+}
+#save_widget{
+    color: var(--primary-color);
+}
+span.save_widget span.filename:hover {
+	background-color: var(--secondary-bg);
+}
+.header-bar{
+    background: var(--secondary-bg-2) !important;
+}
+#ipython_notebook img {
+	filter: invert(100%);
+}
+.navbar-collapse.collapse{
+    background-color: var(--primary-bg) !important;
+    border: var(--border);
+    border-radius: 2px;
+}
+.navbar-default {
+    background-color: var(--secondary-bg-2) !important;
+    border: none;
+}
+.navbar-nav > li > a{
+    color: var(--primary-color) !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: var(--secondary-bg);
+}
+.dropdown-menu{
+    background-color: var(--primary-bg) !important;
+    color: var(--primary-color) !important;
+}
+.dropdown-menu > li > a{
+    color: var(--primary-color) !important;
+}
+.dropdown-submenu > a::after {
+	color: var(--primary-color) !important;
+}
+.dropdown-menu > li > a:hover{
+    background-color: var(--secondary-bg) !important;
+}
+.btn, #cell_type{
+    background-color: var(--primary-bg) !important;
+    border: var(--border);
+    color: var(--primary-color) !important;
+}
+.dropdown-menu .divider {
+	background-color: var(--secondary-bg);
+}
+
+/* notebook main */
+.input_area{
+    background-color: var(--primary-bg) !important;
+    border: 1px solid var(--secondary-bg) !important;
+}
+.input_area:focus-within{
+    border: 1px solid var(--primary-color) !important;
+}
+.CodeMirror-lines {
+	padding: 0.6em 0.6em;
+}
+.CodeMirror-gutter, .CodeMirror-linenumbers {
+    background-color: var(--secondary-bg);
+    padding-right: 1em;
+}
+.CodeMirror-gutters {
+	border-right: 1px solid var(--secondary-bg-2);
+}
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+	border-color: var(--selected-cell);
+}
+#notebook{
+    background-color: var(--primary-bg);
+}
+#notebook-container{
+    background-color: var(--secondary-bg-2);
+    box-shadow: var(--box-shadow);
+}
+.prompt.input_prompt{
+    color: var(--primary-color) !important;
+}
+div.output_area pre {
+	color: var(--secondary-color) !important;
+}
+div.output_area img, div.output_area svg{
+    background-color: var(--secondary-color) !important;
+}
+div.output_area .rendered_html table{
+    background-color: var(--secondary-color) !important;
+}
+div.output_stderr {
+	background: var(--secondary-bg-2);
+}
+.rendered_html * + .alert{
+    background-color: var(--primary-bg) !important;
+    border: none;
+}
+div.out_prompt_overlay:hover {
+	background: none;
+}
+div.text_cell_render {
+	color: var(--secondary-color) !important;
+}
+
+/* code color-scheme and syntax highlighting */
+code{
+    background-color: var(--codeblock-md) !important;
+}
+.rendered_html pre, .rendered_html code {
+	background-color: #5c6370;
+    padding: 0.4em;
+}
+.CodeMirror{
+    color: white !important;
+}
+.cm-keyword{
+    color: #b776d9 !important; /* changed */
+}
+.cm-variable{
+    color: #f8f8f2 !important;
+}
+.cm-def{
+    color: #fd971f !important;
+}
+.cm-variable-2{
+    color: #9effff !important;
+}
+.cm-builtin{
+    color: #66d9ef !important;
+}
+.cm-number{
+    color: #f09483 !important; /* changed */
+}
+.cm-string{
+    color: #f8b694 !important; /*changed*/
+}
+.cm-operator{
+    color: #d5d5d5 !important;
+}
+.cm-property{
+    color: #66d9ef !important;  /* ichanged*/
+}
+.cm-comment{
+    color: #afafae !important;
+}
+
+/* modals */
+.modal-body, .modal-header, .modal-footer{
+    background-color: var(--secondary-bg-2) !important;
+    color: var(--primary-color);
+}
+.form-control{
+    background-color: var(--secondary-bg);
+    color: var(--primary-color);
+    border: var(--border);
+}
+.modal-header{
+	border-bottom: 1px solid var(--secondary-bg-2);
+}
+.modal-header > .close{
+    color: var(--secondary-color);
+    text-shadow: none;
+}
+.modal-footer {
+	border-top: 1px solid var(--secondary-bg-2);
+}
+input[type="search"]{
+    background-color: var(--secondary-bg-2) !important;
+    color: var(--primary-color);
+}
+.typeahead-search-icon, .typeahead__search-icon{
+    filter: invert(100%);
+}
+button[type="submit"]{
+    background-color: var(--secondary-bg-2);
+}
+button[type="submit"]:focus, button[type="submit"]:hover{
+    background-color: var(--secondary-bg);
+}
+.typeahead-list, .typeahead__list{
+    background-color: var(--primary-bg);
+    border: var(--border);
+    color: var(--primary-color);
+}
+.typeahead__list > li{
+    border: none;
+    color: var(--primary-color);
+}
+.typeahead__list > .typeahead__group:first-child{
+    border-top: none;
+}
+.typeahead__list > .typeahead__group > a{
+    background-color: var(--secondary-bg-2);
+}
+ul.typeahead-list > li > a, .typeahead__list > li > a{
+    color: var(--primary-color) !important;
+}
+a[data-group="jupyter-notebook"]:hover, .typeahead__list > li > a:hover{
+    background-color: var(--secondary-bg) !important;
+    color: var(--primary-color) !important;
+}
+
+/* startpage and terminal */
+#site{
+    background-color: var(--primary-bg);
+}
+.nav-tabs{
+    border-bottom: var(--border);
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    background-color: var(--secondary-bg-2);
+    border: var(--border);
+    color: var(--primary-color);
+}
+.nav > li > a:hover, .nav > li > a:focus{
+    background-color: var(--secondary-bg);
+}
+.nav-tabs > li > a:hover{
+    border: 1px solid var(--secondary-bg);
+}
+.dynamic-instructions, .toolbar_info, .tab-pane{
+    color: var(--primary-color) !important;
+}
+.list_container, .panel{
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border: var(--border);
+    border-radius: 2px;
+    box-shadow: var(--box-shadow);
+}
+.list_container > div:last-child {
+	border: none;
+	background: var(--primary-bg);
+}
+.list_header, .panel-heading{
+    background-color: var(--secondary-bg-2) !important;
+    border-bottom: var(--border) !important;
+}
+.list_item{
+    background-color: var(--primary-bg) !important;
+    border-bottom: var(--border) !important;
+    color: var(--primary-color) !important;
+}
+.list_item:hover{
+    background-color: var(--secondary-bg) !important;
+}
+a{
+    color: var(--secondary-color);
+}
+a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
