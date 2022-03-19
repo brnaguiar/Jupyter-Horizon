@@ -150,13 +150,13 @@ code{
     color: #f8f8f2 !important;
 }
 .cm-def{
-    color: #fd971f !important;
+    color: #25b0bc !important;    /* changed */
 }
 .cm-variable-2{
-    color: #9effff !important;
+    color: #e85678 !important;  /* changed 9effff */
 }
 .cm-builtin{
-    color: #66d9ef !important;
+    color: #66d9ef !important;  /* changed p#25b0bc*/
 }
 .cm-number{
     color: #f09483 !important; /* changed */
@@ -165,7 +165,7 @@ code{
     color: #f8b694 !important; /*changed*/
 }
 .cm-operator{
-    color: #d5d5d5 !important;
+    color: #66d9ef !important;    /* ##d5d5d5 */
 }
 .cm-property{
     color: #66d9ef !important;  /* ichanged*/
