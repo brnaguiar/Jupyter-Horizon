@@ -109,15 +109,23 @@ div.cell.selected, div.cell.selected.jupyter-soft-selected {
 .prompt.input_prompt{
     color: var(--primary-color) !important;
 }
+
 div.output_area pre {
 	color: var(--secondary-color) !important;
 }
-div.output_area img, div.output_area svg{
+/*
+div.output_area svg { 
+    background-color: var(--secondary-color) !important;
+}
+*/   /*  v , */
+               
+div.output_area img{
     background-color: var(--secondary-color) !important;
 }
 div.output_area .rendered_html table{
     background-color: var(--secondary-color) !important;
 }
+
 div.output_stderr {
 	background: var(--secondary-bg-2);
 }
@@ -140,9 +148,11 @@ code{
 	background-color: #5c6370;
     padding: 0.4em;
 }
+
 .CodeMirror{
     color: white !important;
 }
+/**/
 .cm-keyword{
     color: #b776d9 !important; /* changed */
 }

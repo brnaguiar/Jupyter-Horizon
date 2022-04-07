@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Darker Jupyter",
-  "description": "Dark Mode for Jupyter Notebooks",
-  "version": "2.4.3",
-  "author": "Kent Leo L. Makibulan",
+  "name": "Jupyter Horizon",
+  "description": "Horizon Theme for Jupyter Notebooks",
+  "version": "2.4.4",
+  "author": "Kent Leo L. Makibulan and Bruno Aguiar",
   "icons": {"16": "images/icon16.png",
             "48": "images/icon48.png",
             "128": "images/icon128.png" },
@@ -18,7 +18,7 @@
       "24": "images/icon16.png",
       "32": "images/icon16.png"
     },
-    "default_title": "Darker Jupyter",
+    "default_title": "Jupyter Horizon",
     "default_popup": "popup.html"
   },
   "content_scripts": [
